@@ -1,0 +1,27 @@
+1. Set it up
+First, install Ollama from its official website: Download Ollama.
+
+Then open a terminal and download the two local models:
+ollama pull llama3.2:3b
+ollama pull nomic-embed-text
+
+
+The first model generates answers; the second creates text embeddings for retrieval. Ollama supports local embedding generation through its API. 
+
+Ollama
++1
+
+
+
+2. Run your project
+Extract the ZIP and open a terminal in the extracted folder.
+python -m venv .venv
+
+
+Activate the environment on Windows:
+.venv\Scripts\activate
+
+
+Install the dependencies and launch the app:
+pip install -r requirements.txt
+streamlit run app.py
